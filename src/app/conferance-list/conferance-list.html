@@ -1,0 +1,5 @@
+<p>conferance-list works!</p>
+@for (c of conferences; track $index){
+    <app-conferance-details [conf]="c" (increment)="increment()"></app-conferance-details><p>Count : {{ count }}</p>
+}
+  
