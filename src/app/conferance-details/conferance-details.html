@@ -1,0 +1,9 @@
+<h2>Conference Details</h2>
+
+@if (conference()) {
+  <h3>{{ conference().name }}</h3>
+  <p>Date : {{ conference().date }}</p>
+  <p>Lieu : {{ conference().place }}</p>
+} @else {
+  <p>Conference introuvable</p>
+}
